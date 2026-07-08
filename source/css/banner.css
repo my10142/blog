@@ -1,0 +1,43 @@
+﻿/* === Banner Video === */
+
+/* hide Butterfly's default ::before overlay */
+#page-header:not(.not-top-img):before {
+  display: none !important;
+}
+
+/* remove default background */
+#page-header {
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+/* video layer - behind everything */
+#banner-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* dark overlay for text readability */
+#banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* text above overlay */
+#page-header #nav,
+#page-header #site-info {
+  position: relative;
+  z-index: 2;
+}
