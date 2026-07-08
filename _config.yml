@@ -12,7 +12,8 @@ language: zh-CN
 timezone: 'Asia/Shanghai'
 
 # URL
-url: http://my1blog.com
+url: https://my10142.github.io/blog
+root: /blog/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -87,4 +88,6 @@ theme: butterfly
 
 # Deployment
 deploy:
-  type: ''
+  type: git
+  repo: https://github.com/my10142/blog.git
+  branch: gh-pages
